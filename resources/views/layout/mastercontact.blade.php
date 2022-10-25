@@ -50,8 +50,8 @@
                  <td> {{ $j_contact->jenis_contact }} </td>
                  @if (auth()->user()->role=='admin')
                  <td class="text-center">
-                    <a href="{{ route('JenisContact.edit', $j_contact->id)  }}" class="btn btn-sm btn-warning btn-circle"><i class="fas fa-edit"></i></a>
-                    <a href="{{ route('JenisContact.hapus', $j_contact->id)  }}" class="btn btn-sm btn-danger btn-circle"><i class="fas fa-trash"></i></a>
+                    <a href="{{ route('JenisContact.edit', $j_contact->id)  }}" class="btn btn-sm btn-warning"><i class="fas fa-edit"></i></a>
+                    <a href="{{ route('JenisContact.hapus', $j_contact->id)  }}" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i></a>
                  </td>
                  @endif
              </tr>
